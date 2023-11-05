@@ -1,8 +1,0 @@
-docker buid -t demo .
-docker run -p 8080:8080 demo
-
-
-docker tag demo stanislavstarodub/demo:v1.0.0
-docker push stanislavstarodub/demo:v1.0.0
-
-
