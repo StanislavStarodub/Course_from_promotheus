@@ -1,2 +1,2 @@
 # Course_from_promotheus
-Это материалы практических работ на курсе DevOps от Promotheus
+These are practical materials for the DevOps course from Promotheus
