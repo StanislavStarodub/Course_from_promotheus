@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    Version: 1.0.0
+  name: sss-ng
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      Version: 1.0.0
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        Version: 1.0.0
+    spec:
+      containers:
+      - image: stanislavstarodub/demohtml2:v1.0.1
+        name: demohtml2
+        resources: {}
+status: {}

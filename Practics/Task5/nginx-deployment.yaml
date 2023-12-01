@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sss-nginx
+  labels:
+    Version: 1.0.0
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      Version: 1.0.0
+  template:
+    metadata:
+      labels:
+        Version: 1.0.0
+    spec:
+      containers:
+      - name: sss-ginx
+        image: nginx:1.14
