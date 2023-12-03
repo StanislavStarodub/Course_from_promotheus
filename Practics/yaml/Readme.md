@@ -8,3 +8,4 @@
 | app-job.yaml | create job in yaml  with name "app-job-rsync" which can reserve copy of "data-input" folder | create Job | [app-job.yaml](app-job.yaml) |
 | app-multicontainer.yaml | create pod in yaml  with name "app-multi-containers" which contains two containers: nginx and debian | create multicontainer | [app-multicontainer.yaml](app-multicontainer.yaml) |
 | app-resources.yaml | create pod nginx in yaml  with name "app-resource" which contains livenessProbe,  readinessProbe, ports,  resources | create resources | [app-resources.yaml](app-resources.yaml) |
+| app-secret-env.yaml | create pod redis in yaml  with name "app-secret-env" which contains env with SECRET_USERNAME and SECRET_PASSWORD | create secret-env | [app-secret-env.yaml](app-secret-env.yaml) |
