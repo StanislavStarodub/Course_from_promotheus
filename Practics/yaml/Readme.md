@@ -1,3 +1,3 @@
 | NAME | PROMPT | DESCRIPTION | EXAMPLE |
 |------|--------|-------------|---------|
-| demo | 123 | about | ex |
+| app.yaml | create pod enginx in yaml format with name "app", label "run:app" | create pod enginx | [app.yaml](app.yaml) |
