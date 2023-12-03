@@ -1,0 +1,20 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: app-job-rsync
+spec:
+  template:
+    spec:
+      containers:
+      - name: app-job-container
+        image: ubuntu:latest
+        command: ["/bin/sh", "-c"]
+        args: ["rsync -a /data-input /data-output"]
+      restartPolicy: Never
+      volumes:
+      - name: input-data
+        hostPath:
+          path: /path/to/data-input
+      - name: output-data
+        emptyDir: {}
+  backoffLimit: 1
